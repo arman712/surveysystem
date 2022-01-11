@@ -1,0 +1,49 @@
+POST http://localhost:8080/api/question/delete/3?surveyId=3
+Content-Type: application/json
+
+{}
+
+###
+
+###
+POST http://localhost:8080/api/survey/delete/2
+Content-Type: application/json
+
+{}
+
+###
+POST http://localhost:8080/api/question/add/1
+Content-Type: application/json
+
+{
+  "questionText": "test question",
+  "questionType": "ANSWER_TEXT",
+  "choices":[]
+}
+
+###
+POST http://localhost:8080/api/survey/add
+Content-Type: application/json
+
+
+{
+  "name": "test",
+  "description": "test survey",
+  "startTime": "2022-01-10T23:59:16.375",
+  "endTime": "2022-01-10T23:59:16.375"
+}
+
+###
+
+POST http://localhost:8080/api/survey/update
+Content-Type: application/json
+
+
+{
+  "id": 1,
+  "name": "test changed name",
+  "description": "test survey",
+  "startTime": "2022-01-10T23:59:16.375",
+  "endTime": "2022-01-10T23:59:16.375"
+
+}
